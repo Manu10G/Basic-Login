@@ -1,0 +1,43 @@
+<html>
+    <head>
+       <title>Registro simple</title>
+       <script src="source.js"></script>
+    </head>
+    <body>
+        <form onsubmit="Registrarse();return false">
+            
+            <div>
+                <label>Nombre</label>
+                <input type="text" name="Nombre"id="nombre_id">
+            </div>
+            <div id="nombre_error">
+            <div>    
+                <label>Apellido</label>
+                <input type="text"name="Apellido"id="apellido_id" >
+            </div>
+            <div>
+                <label>DNI</label>
+                <input type="number"name="Number"id="DNI_id">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email"name="Email"id="email_id">
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input type="password"name="password"id="password_id">
+            </div>
+            <div>
+                <label>Tipo de seguro</label>
+                <select name="tipo_seguro" id="tipo_seguro_id"
+                onchange="tipoSeguro()">
+                <option value="1">Básico</option>
+                <option value="2">Intermedio</option>
+                <option value="3">Premium</option>
+                </select>
+                <div id="mensaje"></div>
+            </div>
+        </form>
+        <button type="submit">Registrarse</button>"
+    </body>
+</html>
